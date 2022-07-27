@@ -1,0 +1,67 @@
+.hero-container > img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    position: relative;
+}
+
+.hero-container > h1 {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    color: white;
+    font-size: 100px;
+    margin-bottom: 500px;
+}
+
+
+.hero-container > p {
+    position: absolute;
+    top: 55%;
+    left: 42%;
+    color: white;
+    font-size: 30px;
+}
+
+@media screen and (max-width:1161px) {
+    .hero-container > h1 {
+        position: absolute;
+        top: 40%;
+        left: 30%;
+        color: white;
+        font-size: 80px;
+        margin-bottom: 500px;
+    }
+    
+    
+    .hero-container > p {
+        position: absolute;
+        top: 55%;
+        left: 42%;
+        color: white;
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and (max-width:960px) {
+    .hero-container > h1 {
+        position: absolute;
+        top: 40%;
+        left: 30%;
+        color: white;
+        font-size: 50px;
+        margin-bottom: 500px;
+    }
+    
+    
+    .hero-container > p {
+        position: absolute;
+        top: 50%;
+        left: 42%;
+        color: white;
+        font-size: 10px;
+    }
+    
+}
