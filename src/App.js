@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
+import Read from './components/read/Read';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={ <Home /> } /> 
+        <Route exact path="/read" element={ <Read /> } /> 
       </Routes>
     </Router>
   );
