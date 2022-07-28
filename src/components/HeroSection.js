@@ -4,7 +4,7 @@ import "./HeroSection.css"
 function HeroSection() {
   return (
       <div className='hero-container'>
-          <img src='/images/pexels-twilight-kenya-11866350.jpg' />
+          <img src='/images/pexels-twilight-kenya-11866350.jpg' alt='An containing Elephats at a park' />
           <h1>TEMBEA KENYA</h1>
           <p>Enjoy the amazing experience of Safari Adventures</p>
           <div className='hero btns'></div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom'
 import "./Navbar.css"
 
@@ -7,7 +7,7 @@ function Navbar() {
     <React.Fragment>
       <nav className="navbar_section">
         <Link to="/" className="logo">
-          <img src='images/images.jpeg' />       
+          <img src='images/images.jpeg'alt='Kenyan flag icon' />       
         </Link>
         <ul className='nav-menu'>
           <li className='nav-item'>

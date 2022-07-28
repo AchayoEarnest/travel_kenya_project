@@ -1,7 +1,7 @@
 import React from 'react';
 import './Tours.css';
 import '../Navbar.css';
-import { Card, Icon, Image } from 'semantic-ui-react';
+import { Card, Image } from 'semantic-ui-react';
 
 
 function Tours() {
