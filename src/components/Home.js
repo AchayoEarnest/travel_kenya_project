@@ -1,14 +1,14 @@
 import React from 'react'
 import Footer from './Footer';
 import HeroSection from './HeroSection'
-import Read from './read/Read'
+import Tours from './tours/Tours'
 import Reviews from './reviews/Reviews'
 
 function Home() {
   return (
       <div>
       <HeroSection />
-      <Read />
+      <Tours />
       <Reviews />
       <Footer />
     </div>

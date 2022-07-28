@@ -5,7 +5,7 @@ import "./Navbar.css"
 function Navbar() {
   return (
     <React.Fragment>
-      <nav class className="navbar_section">
+      <nav className="navbar_section">
         <Link to="/" className="logo">
           <img src='images/images.jpeg' />       
         </Link>
@@ -15,7 +15,7 @@ function Navbar() {
           </li>
 
           <li className='nav-item'>
-            <Link to='/read' className='nav-links'>Read</Link>            
+            <Link to='/tours' className='nav-links'>Tours</Link>            
           </li>
 
           <li className='nav-item'>

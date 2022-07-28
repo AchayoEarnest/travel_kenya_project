@@ -42,3 +42,8 @@
     padding-right: 30px;
     color: white;
 }
+.navbar_section > ul > li > a:hover {
+    text-decoration: underline;
+    color: brown;
+    
+}

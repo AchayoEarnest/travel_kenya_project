@@ -1,120 +1,51 @@
-import React from 'react';
-import './Read.css';
-import '../Navbar.css';
-import { Card, Icon, Image } from 'semantic-ui-react';
+import React, {useEffect, useState} from 'react';
+import "./Read.css"
+import {Button, Table } from 'semantic-ui-react'
+import axios from 'axios';
 
-
-function Read() {
-  return (
-
+function Read() { 
+    const [dataFromApi, setDataFromApi] = useState([]);
+    
+    useEffect(() => {
+        axios.get('https://62e2a5913891dd9ba8ed3db7.mockapi.io/tembea')
+        .then((loadData) => setDataFromApi(loadData.data))
+    }, [])
+    
+    return (
     <div>
-      <h1 className = "title_text" >Amazing places to visit in Kenya</h1>
-      <div className='card_container'>
-      
-      <Card className='card'>
-        <Image src='/images/marina.jpg' wrapped ui={false} />
-        <Card.Content>
-          <Card.Header>English Point Marina</Card.Header>
-          <Card.Meta>
-            <span className='date'>Mombasa</span>
-          </Card.Meta>
-          <Card.Description>
-          With breathtaking views elegant daccor and a fully equipped inventory of the latest conveniences, Hotel EnglishPoint & Spa's Suites are designed to provide the ideal space for business or pleasure. The ultimate serene accommodation.
-          </Card.Description>
-        </Card.Content>
-        
-      </Card>
-      <Card>
-        <Image src='/images/kakamega.jpg' wrapped ui={false} />
-        <Card.Content>
-          <Card.Header>Kakamega Forest</Card.Header>
-          <Card.Meta>
-            <span className='date'>Mombasa</span>
-          </Card.Meta>
-          <Card.Description>
-          With breathtaking views elegant daccor and a fully equipped inventory of the latest conveniences, Hotel EnglishPoint & Spa's Suites are designed to provide the ideal space for business or pleasure. The ultimate serene accommodation.
-          </Card.Description>
-        </Card.Content>
-      </Card>
+        <div className='read_container'>              
+            <Table celled>
+                <Table.Header>
+                    <Table.Row>
+                        <Table.HeaderCell>ID</Table.HeaderCell>
+                        <Table.HeaderCell>First name</Table.HeaderCell>
+                        <Table.HeaderCell>Last name</Table.HeaderCell>
+                        <Table.HeaderCell>Email</Table.HeaderCell>
+                        <Table.HeaderCell>Comments</Table.HeaderCell>
+                        <Table.HeaderCell >Update</Table.HeaderCell>
+                        <Table.HeaderCell>Delete</Table.HeaderCell>
+                    </Table.Row>
+                </Table.Header>
 
-      <Card>
-        <Image src='/images/Masaimara.jpg' wrapped ui={false} />
-        <Card.Content>
-          <Card.Header>Masai Mara Park</Card.Header>
-          <Card.Meta>
-            <span className='date'>Mombasa</span>
-          </Card.Meta>
-          <Card.Description>
-          With breathtaking views elegant daccor and a fully equipped inventory of the latest conveniences, Hotel EnglishPoint & Spa's Suites are designed to provide the ideal space for business or pleasure. The ultimate serene accommodation.
-          </Card.Description>
-        </Card.Content>
-        
-      </Card>
-       <Card>
-        <Image src='/images/kit-mikayi-gfaeb872fa_1280 (2).jpg' wrapped ui={false} />
-        <Card.Content>
-          <Card.Header>Kit Mikayi</Card.Header>
-          <Card.Meta>
-            <span className='date'>Kisumu</span>
-          </Card.Meta>
-          <Card.Description>
-          With breathtaking views elegant daccor and a fully equipped inventory of the latest conveniences, Hotel EnglishPoint & Spa's Suites are designed to provide the ideal space for business or pleasure. The ultimate serene accommodation.
-          </Card.Description>
-        </Card.Content>
-      </Card>
-      <Card>
-        <Image src='/images/fishing-g561d8cfd7_1280 (1).jpg' wrapped ui={false} />
-        <Card.Content>
-          <Card.Header>Lake Victoria</Card.Header>
-          <Card.Meta>
-            <span className='date'>Mombasa</span>
-          </Card.Meta>
-          <Card.Description>
-          With breathtaking views elegant daccor and a fully equipped inventory of the latest conveniences, Hotel EnglishPoint & Spa's Suites are designed to provide the ideal space for business or pleasure. The ultimate serene accommodation.
-          </Card.Description>
-        </Card.Content>
-      </Card>
-
-      <Card>
-        <Image src='/images/Diani Beach.jpg' wrapped ui={false} />
-        <Card.Content>
-          <Card.Header>Diani Beach</Card.Header>
-          <Card.Meta>
-            <span className='date'>Mombasa</span>
-          </Card.Meta>
-          <Card.Description>
-          With breathtaking views elegant daccor and a fully equipped inventory of the latest conveniences, Hotel EnglishPoint & Spa's Suites are designed to provide the ideal space for business or pleasure. The ultimate serene accommodation.
-          </Card.Description>
-        </Card.Content>
-      </Card>
-      <Card>
-        <Image src='/images/Hellsgate national Park.jpg' wrapped ui={false} />
-        <Card.Content>
-          <Card.Header>Hell's gate National Park</Card.Header>
-          <Card.Meta>
-            <span className='date'>Naivasha</span>
-          </Card.Meta>
-          <Card.Description>
-          With breathtaking views elegant daccor and a fully equipped inventory of the latest conveniences, Hotel EnglishPoint & Spa's Suites are designed to provide the ideal space for business or pleasure. The ultimate serene accommodation.
-          </Card.Description>
-        </Card.Content>
-        </Card>
-        <Card>
-        <Image src='/images/Diani Beach.jpg' wrapped ui={false} />
-        <Card.Content>
-          <Card.Header>Diani Beach</Card.Header>
-          <Card.Meta>
-            <span className='date'>Mombasa</span>
-          </Card.Meta>
-          <Card.Description>
-          With breathtaking views elegant daccor and a fully equipped inventory of the latest conveniences, Hotel EnglishPoint & Spa's Suites are designed to provide the ideal space for business or pleasure. The ultimate serene accommodation.
-          </Card.Description>
-        </Card.Content>
-      </Card>
-
-      
+                    <Table.Body>
+                        { dataFromApi.map((data) => {
+                            return (
+                                <Table.Row>
+                                    <Table.Cell>{data.id}</Table.Cell>
+                                    <Table.Cell>{data.firstName}</Table.Cell>
+                                    <Table.Cell>{data.lastName}</Table.Cell>
+                                    <Table.Cell>{data.email}</Table.Cell>
+                                    <Table.Cell>{data.comment}</Table.Cell>
+                                    <Table.Cell className='btn-delete-cell'><Button  color='blue'>Update</Button></Table.Cell>
+                                    <Table.Cell><Button color='red'>Delete</Button></Table.Cell>                    
+                                </Table.Row> 
+                            )
+                        })}
+                             
+                </Table.Body>
+            </Table>
+        </div>
     </div>
-  </div>
     
   )
 }

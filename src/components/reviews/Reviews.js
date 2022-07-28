@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import "./Reviews.css"
-import { Form, Input, TextArea, Button, Select, Table } from 'semantic-ui-react'
+import { Form, Input, TextArea, Button,} from 'semantic-ui-react'
 import axios from 'axios';
+import Read from '../read/Read';
 
 const genderOptions = [
     { key: 'm', text: 'Male', value: 'male' },
@@ -20,6 +21,7 @@ function Reviews() {
     console.log(email);
     console.log(comment);
 
+    //connecting with mockAPI and sending user's data
     const sendDataToApi = () => {
         axios.post(`https://62e2a5913891dd9ba8ed3db7.mockapi.io/tembea`, {
             firstName,
@@ -67,48 +69,22 @@ function Reviews() {
                         control={Input}
                         label='Email'
                         placeholder='earnytech@live.com'
-                        error={{
-                            content: 'Please enter a valid email address',
-                            pointing: 'below',
-                        } }
                         name='email'
                         onChange = {(e)=> setEmail(e.target.value)}
                         />
                         <Form.Field
                         id='form-button-control-public'
                         control={Button}
-                        content='Confirm'
+                        content='Submit'
                         label='Label with htmlFor'
                         type='submit'
                         onClick = {sendDataToApi}
                         />
                 </Form>
-              
-            <Table celled>
-                <Table.Header>
-                    <Table.Row>
-                        <Table.HeaderCell>First name</Table.HeaderCell>
-                        <Table.HeaderCell>Last name</Table.HeaderCell>
-                        <Table.HeaderCell>Email</Table.HeaderCell>
-                        <Table.HeaderCell>Comments</Table.HeaderCell>
-                        <Table.HeaderCell >Update</Table.HeaderCell>
-                        <Table.HeaderCell>Delete</Table.HeaderCell>
-                    </Table.Row>
-                </Table.Header>
-
-                <Table.Body>
-                    <Table.Row>
-                        <Table.Cell>Earnest</Table.Cell>
-                        <Table.Cell>Achayo</Table.Cell>
-                        <Table.Cell>arnytech@live</Table.Cell>
-                        <Table.Cell>*******</Table.Cell>
-                        <Table.Cell className='btn-delete-cell'><Button  color='blue'>Update</Button></Table.Cell>
-                        <Table.Cell><Button color='red'>Delete</Button></Table.Cell>                    
-                    </Table.Row>                
-                </Table.Body>
-            </Table>
-        </div>
-    </div>
+          </div>
+          <Read />
+      </div>
+      
     
   )
 }

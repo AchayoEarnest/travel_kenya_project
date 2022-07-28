@@ -1,14 +1,7 @@
-.card_container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding-top: 20px;
-    top: 0px;
-    gap: 20px;
-    border-top: 2px solid red;
+.read_container {
     margin-left: 5%;
     margin-right: 5%;
+    padding: 2% 5% 2% 5%;
 }
 
 .inner_container {
@@ -20,3 +13,14 @@
     margin-left: 5%;
 }
 
+.btn-delete-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-update-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
