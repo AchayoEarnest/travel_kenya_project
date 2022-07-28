@@ -10,8 +10,9 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={ <Home /> } /> 
-        <Route exact path="/read" element={ <Read /> } /> 
+        <Route path="/" element={ <Home /> } />
+        <Route path="/read" element={ <Read /> } /> 
+
       </Routes>
     </Router>
   );

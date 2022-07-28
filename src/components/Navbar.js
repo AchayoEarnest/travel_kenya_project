@@ -13,12 +13,18 @@ function Navbar() {
           <li className='nav-item'>
             <Link to='/' className='nav-links'>Home</Link>            
           </li>
+
           <li className='nav-item'>
-            <Link to='/services' className='nav-links'>Services</Link>            
+            <Link to='/read' className='nav-links'>Read</Link>            
+          </li>
+
+          <li className='nav-item'>
+            <Link to='/reviews' className='nav-links'>Reviews</Link>            
           </li>
           <li className='nav-item'>
             <Link to='/products' className='nav-links'>Products</Link>            
-          </li>
+          </li>          
+
           <li className='nav-item'>
             <Link to='/sign-up' className='nav-links'>Sign-up</Link>            
           </li>
