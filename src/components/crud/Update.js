@@ -1,10 +1,9 @@
-import React, {useState} from 'react';
-import "./Reviews.css"
+import React, {useEffect, useState} from 'react';
 import { Form, Input, TextArea, Button,} from 'semantic-ui-react'
 import axios from 'axios';
-import Read from '../read/Read';
 
-function Reviews() {
+
+function Update() {
     const [firstName, setFirstname] = useState('');
     const [lastName, setLastname] = useState('');
     const [comment, setComment] = useState('');
@@ -24,6 +23,12 @@ function Reviews() {
             comment
         })
     }
+  useEffect(() => {
+    setFirstname(localStorage.getItem('firstName'))
+    setLastname(localStorage.getItem('lastName'))
+    setComment(localStorage.getItem('comment'))
+    setEmail(localStorage.getItem('email'))
+  }, [])
 
   return (
     <div>
@@ -33,7 +38,8 @@ function Reviews() {
                 <Form.Group widths='equal'>
                     <Form.Field
                           id='form-input-control-first-name'
-                          control={Input}
+                          control={ Input }
+                          value = {firstName}
                           label='First name'
                           placeholder='First name'
                           name='fname'
@@ -41,7 +47,8 @@ function Reviews() {
                     />
                     <Form.Field
                           id='form-input-control-last-name'
-                          control={Input}
+                          control={ Input }
+                          value = {lastName}
                           label='Last name'
                           placeholder='Last name'
                           name='lname'
@@ -50,7 +57,8 @@ function Reviews() {
                     </Form.Group>
                         <Form.Field
                           id='form-textarea-control-opinion'
-                          control={TextArea}
+                          control={ TextArea }
+                          value = {comment}
                           label='Opinion'
                           placeholder='Opinion'
                           name='lname'
@@ -58,7 +66,8 @@ function Reviews() {
                         />
                         <Form.Field
                           id='form-input-control-error-email'
-                          control={Input}
+                          control={ Input }
+                          value = {email}
                           label='Email'
                           placeholder='earnytech@live.com'
                           name='email'
@@ -67,16 +76,15 @@ function Reviews() {
                         <Form.Field
                           id='form-button-control-public'
                           control={Button}
-                          content='Submit'
+                          content='Update'
                           type='submit'
                           onClick = {sendDataToApi}
                         />
                 </Form>
           </div>
-      <Read />
       </div>     
     
   )
 }
 
-export default Reviews;
+export default Update;

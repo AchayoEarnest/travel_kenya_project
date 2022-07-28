@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import "./Read.css"
 import {Button, Table } from 'semantic-ui-react'
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 function Read() { 
     const [dataFromApi, setDataFromApi] = useState([]);
@@ -10,6 +11,12 @@ function Read() {
         axios.get('https://62e2a5913891dd9ba8ed3db7.mockapi.io/tembea')
         .then((loadData) => setDataFromApi(loadData.data))
     }, [])
+
+
+    const setID = (id) => {
+        console.log(id);
+        localStorage.setItem('ID', id)
+    }
     
     return (
     <div>
@@ -36,8 +43,17 @@ function Read() {
                                     <Table.Cell>{data.lastName}</Table.Cell>
                                     <Table.Cell>{data.email}</Table.Cell>
                                     <Table.Cell>{data.comment}</Table.Cell>
-                                    <Table.Cell className='btn-delete-cell'><Button  color='blue'>Update</Button></Table.Cell>
-                                    <Table.Cell><Button color='red'>Delete</Button></Table.Cell>                    
+                                    <Table.Cell className='btn-delete-cell'>
+                                        <Link to = '/update'>
+                                            <Button color='blue' onClick={()=>setID(data.id) } >Update</Button>
+                                        </Link>                                        
+                                    </Table.Cell>
+                                    <Table.Cell>
+                                        <Link to = '/delete'>
+                                            <Button color='red'>Delete</Button>
+                                        </Link>
+                                        
+                                    </Table.Cell>                    
                                 </Table.Row> 
                             )
                         })}
