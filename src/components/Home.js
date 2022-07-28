@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from './Footer';
 import HeroSection from './HeroSection'
 import Read from './read/Read'
 import Reviews from './reviews/Reviews'
@@ -9,6 +10,7 @@ function Home() {
       <HeroSection />
       <Read />
       <Reviews />
+      <Footer />
     </div>
   )
 }

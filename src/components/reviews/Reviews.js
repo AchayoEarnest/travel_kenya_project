@@ -63,29 +63,25 @@ function Reviews() {
               
             <Table celled>
                 <Table.Header>
-                <Table.Row>
-                    <Table.HeaderCell>First name</Table.HeaderCell>
-                    <Table.HeaderCell>Last name</Table.HeaderCell>
-                    <Table.HeaderCell>Email</Table.HeaderCell>
-                    <Table.HeaderCell>Comments</Table.HeaderCell>
-                    <Table.HeaderCell>Update</Table.HeaderCell>
-                    <Table.HeaderCell>Delete</Table.HeaderCell>
-                </Table.Row>
+                    <Table.Row>
+                        <Table.HeaderCell>First name</Table.HeaderCell>
+                        <Table.HeaderCell>Last name</Table.HeaderCell>
+                        <Table.HeaderCell>Email</Table.HeaderCell>
+                        <Table.HeaderCell>Comments</Table.HeaderCell>
+                        <Table.HeaderCell >Update</Table.HeaderCell>
+                        <Table.HeaderCell>Delete</Table.HeaderCell>
+                    </Table.Row>
                 </Table.Header>
 
                 <Table.Body>
-                <Table.Row>
-                    <Table.Cell>Earnest</Table.Cell>
-                    <Table.Cell>Achayo</Table.Cell>
-                    <Table.Cell>arnytech@live</Table.Cell>
-                    <Table.Cell>*******</Table.Cell>
-                    <Table.Cell><Button color='blue'>Update</Button></Table.Cell>
-                    <Table.Cell><Button color='red'>Delete</Button></Table.Cell>
-                    
-                    
-                    
-                </Table.Row>
-                
+                    <Table.Row>
+                        <Table.Cell>Earnest</Table.Cell>
+                        <Table.Cell>Achayo</Table.Cell>
+                        <Table.Cell>arnytech@live</Table.Cell>
+                        <Table.Cell>*******</Table.Cell>
+                        <Table.Cell className='btn-delete-cell'><Button  color='blue'>Update</Button></Table.Cell>
+                        <Table.Cell><Button color='red'>Delete</Button></Table.Cell>                    
+                    </Table.Row>                
                 </Table.Body>
             </Table>
         </div>
