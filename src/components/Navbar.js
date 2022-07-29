@@ -9,10 +9,14 @@ function Navbar() {
         <Link to="/" className="logo">
           <img src='images/images.jpeg'alt='Kenyan flag icon' />       
         </Link>
+        <div>
+          
+        </div>
         <ul className='nav-menu'>
           <li className='nav-item'>
             <Link to='/' className='nav-links'>Home</Link>            
           </li>
+          
 
           <li className='nav-item'>
             <Link to='/tours' className='nav-links'>Tours</Link>            
@@ -28,7 +32,6 @@ function Navbar() {
           <li className='nav-item'>
             <Link to='/sign-up' className='nav-links'>Sign-up</Link>            
           </li>
-
         </ul>
       </nav>
       </React.Fragment>

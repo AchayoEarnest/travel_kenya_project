@@ -1,9 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import { Form, Input, TextArea, Button,} from 'semantic-ui-react'
 import axios from 'axios';
+import {useNavigate} from 'react-router-dom'
 
 
 function Update() {
+    let navigate = useNavigate;
     const [firstName, setFirstname] = useState('');
     const [lastName, setLastname] = useState('');
     const [comment, setComment] = useState('');
@@ -22,7 +24,7 @@ function Update() {
             lastName,
             comment,
             email            
-        })
+        }).then(() => navigate.push('./read'))
     }
   useEffect(() => {
     setFirstname(localStorage.getItem('firstName'));

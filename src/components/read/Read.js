@@ -64,11 +64,8 @@ function Read() {
                                             <Button color='blue' onClick={()=>setData(data.id, data.firstName, data.lastName, data.comment, data.email) } >Update</Button>
                                         </Link>                                        
                                     </Table.Cell>
-                                    <Table.Cell>
-                                        <Link to = '/delete'>
-                                            <Button color='red' onClick={ () => onDelete(data.id) }>Delete</Button>
-                                        </Link>
-                                        
+                                    <Table.Cell>                                
+                                            <Button color='red' onClick={ () => onDelete(data.id) }>Delete</Button>                                        
                                     </Table.Cell>                    
                                 </Table.Row> 
                             )
