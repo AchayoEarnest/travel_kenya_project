@@ -14,10 +14,10 @@ This is a simple website to help tourists or local Kenyans to choose amazing pla
 
 ## SCREENSHOTS
 
-![image](./images/1.png)
-![image](./images/2.png)
-![image](./images/3.png)
-![image](./images/4.png)
+![image](./public/images/1.png)
+![image](./public/images/2.png)
+![image](./public/images/3.png)
+![image](./public/images/4.png)
 
 ---
 
