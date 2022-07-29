@@ -5,6 +5,7 @@ import axios from 'axios';
 import Read from '../read/Read';
 import {useNavigate} from 'react-router'
 
+//This variable below will help in updating the state of our component
 function Reviews() {
     const navigate = useNavigate;
     const [firstName, setFirstname] = useState('');
@@ -17,7 +18,7 @@ function Reviews() {
     console.log(email);
     console.log(comment);
 
-    //connecting with mockAPI and sending user's data
+    //connecting with mockAPI and sending user's data to the server
     const sendDataToApi = () => {
         axios.post(`https://62e2a5913891dd9ba8ed3db7.mockapi.io/tembea`, {
             firstName,
