@@ -7,11 +7,11 @@ import Reviews from './reviews/Reviews'
 function Home() {
   return (
       <div>
-      <HeroSection />
-      <Tours />
-      <Reviews />
-      <Footer />
-    </div>
+        <HeroSection />
+        <Tours />
+        <Reviews />
+        <Footer />
+      </div>
   )
 }
 

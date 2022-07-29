@@ -10,6 +10,9 @@ function Navbar() {
           <img src='images/images.jpeg'alt='Kenyan flag icon' />       
         </Link>
         <div>
+          <h1 className='logo-text'>Enjoy the walk!</h1>
+        </div>
+        <div>
           
         </div>
         <ul className='nav-menu'>
