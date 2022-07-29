@@ -10,13 +10,17 @@
     margin-left: 5%;
     margin-right: 5%;
 }
-
 .inner_container {
     display: flex;
 }
-
 .title_text {
     padding-top: 100px;
     margin-left: 5%;
 }
-
+.zoom {
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+.zoom:hover {
+    transform: scale(1.02); 
+  }

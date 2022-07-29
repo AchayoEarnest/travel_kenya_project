@@ -4,32 +4,27 @@
     color: white;
     padding: 5%;
 }
-
 .inner_section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
 li {
     list-style: none;
     margin-top: 7px;
 }
-
 .social {
     display: flex;
     flex-direction: row;
     gap: 5px;
 }
-
 a {
     text-decoration: none;
     color: white;
     font-size: 20px;
     
 }
-
 .lower_section {
     border-top: 1px solid grey;
     margin-top: 45px;
@@ -37,4 +32,3 @@ a {
     font-size: 12px;
     padding-top: 10px;
 }
-

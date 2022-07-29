@@ -37,7 +37,7 @@ function Navbar() {
           </li>
         </ul>
       </nav>
-      </React.Fragment>
+    </React.Fragment>
   )
 }
 
