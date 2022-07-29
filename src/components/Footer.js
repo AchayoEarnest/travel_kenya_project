@@ -14,6 +14,8 @@ function Footer() {
           <ul>
             <li>P O Box</li>
             <li>154325-34 Nairobi, Kenya</li>
+            <li>Office Location: Nairobi Kenya</li>
+            <li>Kimathi Street, Opposite Kimathi Junction, 5th floor</li>
           
           </ul>
         </div>
@@ -23,8 +25,7 @@ function Footer() {
             <li>Tembea Kenya</li>
             <li>Email: safaritours@live.com</li>
             <li>Phone : +254020287872</li>
-            <li>Office Location: Nairobi Kenya</li>
-            <li>Kimathi Street, Oppoite Kimathi Junction, 5th floor</li>
+            
           </ul>
         </div>
         <div className='higher section'>

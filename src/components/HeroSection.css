@@ -56,9 +56,21 @@
     }
     
     
+    /* .hero-container > p {
+        position: absolute;
+        top: 65%;
+        left: 42%;
+        color: white;
+        font-size: 10px;
+    } */
+    
+}
+
+@media screen and (max-width:500px) {  
+    
     .hero-container > p {
         position: absolute;
-        top: 50%;
+        top: 65%;
         left: 42%;
         color: white;
         font-size: 10px;
