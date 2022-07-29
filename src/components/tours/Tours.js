@@ -29,7 +29,7 @@ function Tours() {
         <Card.Content>
           <Card.Header>Kakamega Forest</Card.Header>
           <Card.Meta>
-            <span className='date'>Mombasa</span>
+            <span className='date'>Western Kenya</span>
           </Card.Meta>
           <Card.Description>
           Kakamega Forest is a tropical rainforest situated in the Kakamega and Nandi County of Kenya, northwest of the capital Nairobi, and near to the border with Uganda.It is Kenya's only tropical rainforest and the best place to chill
