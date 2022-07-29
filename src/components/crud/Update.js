@@ -8,7 +8,7 @@ function Update() {
     const [lastName, setLastname] = useState('');
     const [comment, setComment] = useState('');
     const [email, setEmail] = useState('');
-    const [ID, setId] = useState(null)
+    const [ID, setID] = useState(null)
 
     console.log(firstName);
     console.log(lastName);
@@ -20,8 +20,8 @@ function Update() {
         axios.put(`https://62e2a5913891dd9ba8ed3db7.mockapi.io/tembea/${ID}`, {
             firstName,
             lastName,
-            email,
-            comment
+            comment,
+            email            
         })
     }
   useEffect(() => {
@@ -29,7 +29,7 @@ function Update() {
     setLastname(localStorage.getItem('lastName'));
     setComment(localStorage.getItem('comment'));
     setEmail(localStorage.getItem('email'));
-    setId(localStorage.getItem('ID'))
+    setID(localStorage.getItem('ID'))
   }, []);
 
 

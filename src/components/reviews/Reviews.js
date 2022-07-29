@@ -3,8 +3,10 @@ import "./Reviews.css"
 import { Form, Input, TextArea, Button,} from 'semantic-ui-react'
 import axios from 'axios';
 import Read from '../read/Read';
+import {useNavigate} from 'react-router'
 
 function Reviews() {
+    const navigate = useNavigate;
     const [firstName, setFirstname] = useState('');
     const [lastName, setLastname] = useState('');
     const [comment, setComment] = useState('');
@@ -22,6 +24,8 @@ function Reviews() {
             lastName,
             email,
             comment
+        }).then(() => {
+          navigate.push('./read')
         })
     }
 

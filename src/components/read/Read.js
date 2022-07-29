@@ -21,17 +21,18 @@ function Read() {
         localStorage.setItem('email', email)
     }
 
-    const getData = () => {
+    const loadData = () => {
         axios.get('https://62e2a5913891dd9ba8ed3db7.mockapi.io/tembea')
         .then((loadData) => setDataFromApi(loadData.data))
     }
     
     const onDelete = (id) => {
-        axios.delete('https://62e2a5913891dd9ba8ed3db7.mockapi.io/tembea/$(id)')
-            .then((loadData) => {
+        axios.delete(`https://62e2a5913891dd9ba8ed3db7.mockapi.io/tembea/${id}`)
+            .then(() => {
                 loadData();
-            });
-}
+        })
+
+    }
 
     return (
     <div>
@@ -71,8 +72,7 @@ function Read() {
                                     </Table.Cell>                    
                                 </Table.Row> 
                             )
-                        })}
-                             
+                        })}                             
                 </Table.Body>
             </Table>
         </div>
