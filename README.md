@@ -18,6 +18,7 @@ This is a simple website to help tourists or local Kenyans to choose amazing pla
 ![image](./public/images/2.png)
 ![image](./public/images/3.png)
 ![image](./public/images/4.png)
+![image](./public/images/5.png)
 
 ---
 
