@@ -8,6 +8,7 @@ function Update() {
     const [lastName, setLastname] = useState('');
     const [comment, setComment] = useState('');
     const [email, setEmail] = useState('');
+    const [ID, setId] = useState(null)
 
     console.log(firstName);
     console.log(lastName);
@@ -16,7 +17,7 @@ function Update() {
 
     //connecting with mockAPI and sending user's data
     const sendDataToApi = () => {
-        axios.post(`https://62e2a5913891dd9ba8ed3db7.mockapi.io/tembea`, {
+        axios.put(`https://62e2a5913891dd9ba8ed3db7.mockapi.io/tembea/${ID}`, {
             firstName,
             lastName,
             email,
@@ -24,11 +25,13 @@ function Update() {
         })
     }
   useEffect(() => {
-    setFirstname(localStorage.getItem('firstName'))
-    setLastname(localStorage.getItem('lastName'))
-    setComment(localStorage.getItem('comment'))
-    setEmail(localStorage.getItem('email'))
-  }, [])
+    setFirstname(localStorage.getItem('firstName'));
+    setLastname(localStorage.getItem('lastName'));
+    setComment(localStorage.getItem('comment'));
+    setEmail(localStorage.getItem('email'));
+    setId(localStorage.getItem('ID'))
+  }, []);
+
 
   return (
     <div>
