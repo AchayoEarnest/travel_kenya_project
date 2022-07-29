@@ -32,7 +32,7 @@ function Tours() {
             <span className='date'>Mombasa</span>
           </Card.Meta>
           <Card.Description>
-          With breathtaking views elegant daccor and a fully equipped inventory of the latest conveniences, Hotel EnglishPoint & Spa's Suites are designed to provide the ideal space for business or pleasure. The ultimate serene accommodation.
+          Kakamega Forest is a tropical rainforest situated in the Kakamega and Nandi County of Kenya, northwest of the capital Nairobi, and near to the border with Uganda.It is Kenya's only tropical rainforest and the best place to chill
           </Card.Description>
         </Card.Content>
       </Card>
@@ -42,10 +42,10 @@ function Tours() {
         <Card.Content>
           <Card.Header>Masai Mara Park</Card.Header>
           <Card.Meta>
-            <span className='date'>Mombasa</span>
+            <span className='date'>Southern Kenya</span>
           </Card.Meta>
           <Card.Description>
-          With breathtaking views elegant daccor and a fully equipped inventory of the latest conveniences, Hotel EnglishPoint & Spa's Suites are designed to provide the ideal space for business or pleasure. The ultimate serene accommodation.
+          Maasai Mara National Reserve is an area of preserved savannah wilderness in southwestern Kenya, along the Tanzanian border. Its animals include lions, cheetahs, elephants, zebras and hippos.
           </Card.Description>
         </Card.Content>
         
@@ -58,7 +58,7 @@ function Tours() {
             <span className='date'>Kisumu</span>
           </Card.Meta>
           <Card.Description>
-          With breathtaking views elegant daccor and a fully equipped inventory of the latest conveniences, Hotel EnglishPoint & Spa's Suites are designed to provide the ideal space for business or pleasure. The ultimate serene accommodation.
+          An explanation of the shape of this unique stone is that the structure represents the Luo cultural polygamous family which explains how a polygamous man should built houses for the three wives.
           </Card.Description>
         </Card.Content>
       </Card>
@@ -67,10 +67,10 @@ function Tours() {
         <Card.Content>
           <Card.Header>Lake Victoria</Card.Header>
           <Card.Meta>
-            <span className='date'>Mombasa</span>
+            <span className='date'>Kisumu</span>
           </Card.Meta>
           <Card.Description>
-          With breathtaking views elegant daccor and a fully equipped inventory of the latest conveniences, Hotel EnglishPoint & Spa's Suites are designed to provide the ideal space for business or pleasure. The ultimate serene accommodation.
+          Lake Victoria is one of the African Great Lakes. With a surface area of approximately 59,947 km², Lake Victoria is Africa's largest lake by area, the world's largest tropical lake, and the world's second-largest fresh water lake.
           </Card.Description>
         </Card.Content>
       </Card>
@@ -83,7 +83,7 @@ function Tours() {
             <span className='date'>Mombasa</span>
           </Card.Meta>
           <Card.Description>
-          With breathtaking views elegant daccor and a fully equipped inventory of the latest conveniences, Hotel EnglishPoint & Spa's Suites are designed to provide the ideal space for business or pleasure. The ultimate serene accommodation.
+          Diani Beach is a major beach on the Indian Ocean coast of Kenya. It is located 30 kilometres south of Mombasa, in Kwale County. It has been voted Africa's leading beach destination for the fifth time running since 2015.
           </Card.Description>
         </Card.Content>
       </Card>
@@ -95,7 +95,7 @@ function Tours() {
             <span className='date'>Naivasha</span>
           </Card.Meta>
           <Card.Description>
-          With breathtaking views elegant daccor and a fully equipped inventory of the latest conveniences, Hotel EnglishPoint & Spa's Suites are designed to provide the ideal space for business or pleasure. The ultimate serene accommodation.
+          Hell's Gate National Park lies south of Lake Naivasha in Kenya, north west of Nairobi. Hell's Gate National Park is named after a narrow break in the cliffs, once a tributary of a prehistoric lake that fed early humans in the Rift Valley.
           </Card.Description>
         </Card.Content>
         </Card>
@@ -107,7 +107,7 @@ function Tours() {
             <span className='date'>Mombasa</span>
           </Card.Meta>
           <Card.Description>
-          With breathtaking views elegant daccor and a fully equipped inventory of the latest conveniences, Hotel EnglishPoint & Spa's Suites are designed to provide the ideal space for business or pleasure. The ultimate serene accommodation.
+          Diani Beach is a major beach on the Indian Ocean coast of Kenya. It is located 30 kilometres south of Mombasa, in Kwale County. It has been voted Africa's leading beach destination for the fifth time running since 2015.
           </Card.Description>
         </Card.Content>
       </Card>
