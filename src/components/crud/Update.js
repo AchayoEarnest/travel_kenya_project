@@ -26,6 +26,7 @@ function Update() {
             email            
         }).then(() => navigate.push('./read'))
     }
+  // Setting the data from the local storage to the form ready for update
   useEffect(() => {
     setFirstname(localStorage.getItem('firstName'));
     setLastname(localStorage.getItem('lastName'));

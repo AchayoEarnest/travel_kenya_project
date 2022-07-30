@@ -5,7 +5,7 @@ import axios from 'axios';
 import Read from '../read/Read';
 import {useNavigate} from 'react-router'
 
-//This variable below will help in updating the state of our component
+// This variable below will help in updating the state of our component
 function Reviews() {
     const navigate = useNavigate;
     const [firstName, setFirstname] = useState('');
@@ -26,7 +26,7 @@ function Reviews() {
             email,
             comment
         }).then(() => {
-          navigate.push('./read')
+          navigate.push('./read') 
         })
     }
 
@@ -34,6 +34,7 @@ function Reviews() {
     <div>
       <h1 className = "title_text" >Reviews</h1>
         <div className='reviews_container'>
+            {/* This is form will get user data to be sent to the json Mock API */}
             <Form>
                 <Form.Group widths='equal'>
                     <Form.Field

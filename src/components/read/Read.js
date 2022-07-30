@@ -7,12 +7,13 @@ import { Link } from 'react-router-dom';
 function Read() { 
     const [dataFromApi, setDataFromApi] = useState([]);
     
+    // useEffect Loads data when component is started or loaded
     useEffect(() => {
         axios.get('https://62e2a5913891dd9ba8ed3db7.mockapi.io/tembea')
         .then((loadData) => setDataFromApi(loadData.data))
     }, [])
 
-
+    // This will connect with local storage based on the id of each item
     const setData = (id, firstName, lastName,comment, email) => {
         localStorage.setItem('ID', id)
         localStorage.setItem('firstName', firstName)
@@ -25,7 +26,7 @@ function Read() {
         axios.get('https://62e2a5913891dd9ba8ed3db7.mockapi.io/tembea')
         .then((loadData) => setDataFromApi(loadData.data))
     }
-    
+    // This function will delete items based on each item id
     const onDelete = (id) => {
         axios.delete(`https://62e2a5913891dd9ba8ed3db7.mockapi.io/tembea/${id}`)
             .then(() => {
@@ -51,6 +52,7 @@ function Read() {
                 </Table.Header>
 
                     <Table.Body>
+                        {/* This map function displays loaded data to the actual table on the site */}
                         { dataFromApi.map((data) => {
                             return (
                                 <Table.Row>
