@@ -9,9 +9,9 @@ function Footer() {
   return (
     <div className='footer-section'>      
       <div className='inner_section'>
-        <div className='higher section'>
-          <h4></h4>
+        <div className='higher_section'>
           <ul>
+            <h5>Location Adress</h5>
             <li>P O Box</li>
             <li>154325-34 Nairobi, Kenya</li>
             <li>Office Location: Nairobi Kenya</li>
@@ -20,7 +20,7 @@ function Footer() {
           </ul>
         </div>
         <div className='higher section'>
-          <h4>Contact Us</h4>
+          <h5>Contact info</h5>
           <ul>
             <li>Tembea Kenya</li>
             <li>Email: safaritours@live.com</li>
@@ -29,7 +29,7 @@ function Footer() {
           </ul>
         </div>
         <div className='higher section'>
-          <h4>Other services</h4>
+          <h5>Other services</h5>
           <ul>
             <li>Tour car hiring</li>
             <li>Tour giding</li>
@@ -41,16 +41,24 @@ function Footer() {
           <ul className='social'>
             
             <li>
-              <a href='https://www.facebook.com/'><FaFacebookSquare /></a>
+              <a href='https://www.facebook.com/'>
+                <FaFacebookSquare />
+              </a>
             </li>
             <li>
-              <a href='https://twitter.com/'><FaTwitterSquare /></a>
+              <a href='https://twitter.com/'>
+                <FaTwitterSquare />
+              </a>
             </li>
             <li>
-              <a href='https://www.instagram.com/'><FaInstagramSquare /></a>
+              <a href='https://www.instagram.com/'>
+                <FaInstagramSquare />
+              </a>
             </li>
             <li>
-            <a href='linkedin.com'><FaLinkedin /></a>
+              <a href='linkedin.com'>
+                <FaLinkedin />
+              </a>
             </li>
             
           </ul>
