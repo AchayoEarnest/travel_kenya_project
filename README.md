@@ -49,7 +49,7 @@ This is a simple website to help tourists or local Kenyans to choose amazing pla
 
 ## How To Run It
 
-> $ Run it under any browser
+> $ type 'npm start' on your text edito commandline and hit enter.
 
 ---
 
