@@ -55,7 +55,7 @@ This is a simple website to help tourists or local Kenyans to choose amazing pla
 
 ## Live Link
 
-Or you can access the web application directly via this [LINK.]()
+Or you can access the web application directly via this [LINK.](https://sparkling-rabanadas-ca4e6c.netlify.app/)
 
 ---
 
