@@ -75,7 +75,7 @@ function Reviews() {
                           control={Button}
                           content='Submit'
                           type='submit'
-                          onClick = {sendDataToApi}
+                          onClick={ sendDataToApi }                          
                         />
                 </Form>
           </div>

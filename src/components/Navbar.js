@@ -33,12 +33,12 @@ function Navbar() {
           </li>          
 
           <li className='nav-item'>
-            <Link to='/sign-up' className='nav-links'>Sign-up</Link>            
+            <Link to='/sign-up' className='nav-links'>SignUp</Link>            
           </li>
         </ul>
       </nav>
     </React.Fragment>
-  )
+  ) 
 }
 
 export default Navbar
