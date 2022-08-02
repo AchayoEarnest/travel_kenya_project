@@ -8,7 +8,7 @@
 
 ## Project Description
 
-This is a simple website to help tourists or local Kenyans to choose amazing places to visit during vacation or picnic times.
+This is a project to showcase some awesome tourist attraction places to visit in Kenya. Its designed in react and uses Mock API server to post and get data.
 
 ---
 
